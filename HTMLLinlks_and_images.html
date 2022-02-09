@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images
+    </title>
+</head>
+<body>
+
+
+    <!-- the anchor tag that basically helps us to handle links. 
+    In the body tag, if you type “a", anchor tag will appear. Just hit the enter key or if you want you can manually write the whole tag. Refer to the declaration below: -->
+    <a href=""> </a>
+
+  <!-- <a></a> is a tag, but href is attribute  -->
+
+    
+    
+    
+    <a href="https://google.com">Go to google</a><br>
+    <a href="https://facebook.com">Go to facebook<a><br>
+    <a href="https://twitter.com">Go to twitter</a><br>
+    <a href="https://linkedin.com">Go to Linked</a><br>
+    <!-- Here href is the attribute of anchor tag where you have to write the URL of the website or Link that you want to open.  -->
+
+    
+    
+    <!-- Now, the problem arises here is that as soon as we click on the keyword, the website will open on the same webpage but if in case you want to open the website in a new tab then you have to add a new attribute in the anchor tag I.e. “target".  -->
+    <a href="https://google.com" target ="_blank">This Link will ake you to google in next tab</a><br>
+
+    <!-- you can also link internal webpages that are locally available in your directory. You just have to use the address of the internal webpages including the file name with its extension.  -->
+    <a href="/My Codes/HTML/HTMLHeading and pararaph.html" target ="_blank">It will lead to internal website</a>
+
+
+
+    <!-- In order to insert an image in a webpage, you have to use the img tag. 
+    An img tag generally have two basic attributes “src" and “alt". -->
+    <img src="" alt="">
+    <!-- Here “src" is the field where you have to insert the URL or address of the image and the “alt" attribute is a field that will display to users if their browser fails to load the image. 
+
+In the “alt" tag, we generally input a keyword of the image that can define the image in case the user can’t see the image.  -->
+    <img src="Water.jpg" alt="Error: opening image"><br>
+
+    <!-- for online image -->
+    <img src="https://source.unsplash.com/random" alt= "Error loading image">
+    <!-- Here a random image will be loaded because this URL stores multiple images and any one of them gets reloaded every time we refresh the webpage.  -->
+
+
+
+    <!-- Apart from this, let's see another example where we can adjust the height and width of the image using the URL only. Well, this is not something that we can do in every URL. Here we can do it because the developers of the website have created this URL accordingly.  -->
+    <img src="https://source.unsplash.com/600x900/?nature,water" alt= "Error loading image">
+    <!-- If you want to manipulate the dimensions of the images, you can use the “height" and “width" attribute of img tag. Though it is not recommended to manipulate the dimension using these attributes, we will use CSS to alter the design accordingly. -->
+</body>
+</html>
