@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ides and classes</title>
+</head>
+<body>
+
+    <!-- In the same way, IDs refer to giving a name to any particular element for its identity. It simply refers giving an identity to an element. We know, no two names can be given to any of the two members of the family. In the same way, one ID can be given to only one element on a website. Therefore, in the below example, the id mainBox cannot be given to any other element. -->
+    <div id="mainBox" class="redBg">
+        this is a mainBox
+
+        <!-- Let us now understand what are classes with an example. Assume that I am having 100 elements in my HTML and I want to give a red background to all the 100 elements. To do this, we have two options. Either we have to select each element and assign a red background to it or we can create a class redBG and assign a red background to it. Then we can give this class to the elements in which we want a red background color.  -->
+
+        <!-- One point to note here is we can assign only one ID to a particular element but it is not so in the case of classes. An element can have more than one class in itself. The more classes we add in an element, the more property will get added to it. -->
+    </div>
+
+    <span class="redBg"></span>
+    <span class="redBg"></span>
+    <!-- Classes are denoted by a dot ‘.’ and ID is denoted by hash ‘#’. For example, to get a redBG class in an element we can simply write that element name followed by .redBG. -->
+    <span class="redBG"></span>
+    <span id="mainSpan"></span>
+    <div class="redBg blackBoard anotherClass"></div>
+    <div class="blackBackgroung"></div>
+</body>
+</html>
