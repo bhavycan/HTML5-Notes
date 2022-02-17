@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Lists</title>
+</head>
+<body>
+
+    <!-- The lists are basically of two types-
+    1) Ordered lists
+    2) Unorderd List -->
+
+    <!-- The difference between an ordered and an unordered list is that the ordered list displays the list in this format -
+
+1.
+
+2.
+
+3.
+
+….
+
+On the other hand, the unordered lists display the list in the following format-
+
+.
+.
+.
+…. -->
+   <ul>
+       <li>This is the first item in my unorderd list</li>
+       <li>This is the second item in my unorderd list</li>
+       <li>This is the third item in my unorderd list</li>
+   </ul> 
+   <ol>
+       <li>This is my first orderd list</li>
+       <li>This is my second orderd list</li>
+       <li>This is my third orderd list</li>
+   </ol>
+
+
+
+   <!-- Both the lists have more than one attribute which we can write using the type command. For example, if we write: -->
+   <ol type="I">
+   <!-- Then we will get the lists as I, II, III, and so on. In the same format, we can also get the lists as A, B, C, and so on.   -->
+    <li>This is my first orderd list</li>
+    <li>This is my second orderd list</li>
+    <li>This is my third orderd list</li>
+   </ol>
+
+   <!-- This applies on unordered lists also. If we write -->
+   <ul type="square">
+    <li>This is the first item in my unorderd list</li>
+    <li>This is the second item in my unorderd list</li>
+    <li>This is the third item in my unorderd list</li>
+   </ul>
+   <!-- Then we will get a bulleted square instead of a circle. There are various other references available from which you can see all the attributes. There is no need to learn all these things. You will get perfect by practising. -->
+
+   <!-- HTML also allows the nesting of lists. It simply means we can add a list into another list -->
+   <ul type="circle">
+    <li>This is the first item in my unorderd list</li>
+    <li>This is the second item in my unorderd list</li>
+    <ul>
+        <li>another one</li>
+        <li>second one</li>
+        <li> third one</li>
+    </ul>
+    <li>This is the third item in my unorderd list</li>
+   </ul>
+
+
+
+
+
+
+   <!-- The main part is the table tag, and it consists of two parts: the table head and table body. The <thead> consists of the main head of the table and <tbody> consists of the body of the table. 
+
+    <tr> is used to justify that it is the part of a row. Inside the <tr> tag, we give the headings of a row under the <th> tag. The final structure of a table looks like- -->
+            <!-- Structure:
+            <table>        
+                <thead>
+                    <tr>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+        -->
+
+
+   <h3>Table</h3>
+   <table>
+   <thead>
+        <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Role</th><br>
+        </tr>
+   </thead>
+   <tbody>
+        <tr>
+                <td>Bhavy</td>
+                <td>1210</td>
+                <td>45</td><br>
+        </tr>
+        <tr>
+                <td>Mishwa</td>
+                <td>2561</td>
+                <td>23</td><br>
+        </tr>
+        <tr>
+                <td>Lol</td>
+                <td>5625</td>
+                <td>52</td>
+        </tr>
+   </tbody>
+</table>
+</body>
+</html>
