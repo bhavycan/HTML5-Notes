@@ -5,11 +5,11 @@ class Book
 {
 private:
     static int counter;
-    // instead of using static integer if you use normal
-    //  int counter = 0;
-    //   than it will allocate for the each object and allways shows the output
-    //   "Enter the Id of the book" : 1
-    //   in addition , you must initialize with 0 before you use it
+    //instead of using static integer if you use normal
+    //int counter = 0;
+    //than it will allocate for the each object and allways shows the output
+    //"Enter the Id of the book" : 1
+    //in addition , you must initialize with 0 before you use it
 
 
 
