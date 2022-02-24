@@ -24,7 +24,7 @@ for (int i = 0; i < 5; i++)
 
     for (int j = 0; j <i+1; j++)
     {
-            if (arr[i] + arr[j] == key)         //checking for target
+            if (arr[i] + arr[j] == key)         //checking for the target
             {
                 a[0] = arr[i];
                 a[1] = arr[j];
