@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{background-color: aqua;
+              position: relative;
+              top: 49px ;
+                      }
+
+        /* z-index will work omly for the position-->relative, fixed, static and absolute
+
+        z-index directly connected to which comes first */
+
+        #box2{background-color: blue;
+            position: relative;
+              top: 14px ;
+              z-index: 10; }
+
+        /* Difference between the display: none and the visibility :hidden
+        -->In the display the whole content of element will be gone
+        -->In the visibility, the element will be hided but the emptyspace of it will be there  */
+
+        #box3{background-color: blueviolet;}
+        #box4{background-color:darkcyan}
+    </style>
+</head>
+<body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+</body>
+</html>
