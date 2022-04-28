@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+
+        html{
+            font-size: 25px;
+        }
+
+        .container{
+            width: 100vw; 
+            /* 100 -- full screen; */
+            height: 100vh;
+            font-size: 3px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        #first{
+            font-size: 10em;
+            /* 10em means that the 1o times the parent font size----100px */
+            /* padding: 3em; */
+            /*will take the 30px--the size of 10px*/
+        }
+        #Second{
+            font-size: 3rem;
+            /* relative to the html size font*/
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first the heading</h1>
+        <h1 id="Second">This is second heading</h1>
+        <h1 id="Third">This is the third heading</h1>
+
+    </div>
+</body>
+</html>
