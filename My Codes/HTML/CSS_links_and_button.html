@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links and Button styling</title>
+    <style>
+      .main {
+        color: rebeccapurple;
+        background-color: cornsilk;
+        border: 2px solid green;
+        border-radius: 18px;
+        padding: 26px;
+        margin: 30px auto;
+        width: 472px;
+      }
+
+      .btn{
+          color: blue;
+          background-color: azure;
+          cursor: pointer; /* make cursor like hand */
+          font-size: medium;
+          padding :6px;
+          border-radius: 11px;;
+      }
+
+      a{
+          text-decoration: none;
+          /*remove the line under the link*/
+      }
+
+      a:hover{
+          color: brown;
+          /*when you go on the kink then change color*/
+          background-color: cadetblue;
+      }
+
+      a:visited{
+          color: darkmagenta;
+          /*visited link have those color*/
+      }
+
+      a:active{
+          color: darkgoldenrod;
+          /*for active link*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3>This is WEB</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi nam
+        rem quis sit! Dolorem delectus odit accusantium, voluptatum beatae et
+        repellendus labore commodi, eius facilis ad dolorum similique quos!
+      </p>
+      <a href="https://google.com" target="_blank" class="btn">Read More</a>
+      <button class="btn">Contact Us</button>
+    </div>
+  </body>
+</html>

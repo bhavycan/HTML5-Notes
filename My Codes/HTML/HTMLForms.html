@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is my first HTML Form</h2>
+
+
+    <!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. So, for now, we will write it as backend.php. All the data submitted in a form will be stored automatically in the backend “backend.php” after submitting it. -->
+    <form action="backend.php">
+
+
+
+
+
+        <!-- Then comes the <input>tags which are present inside the form, where the user provides the input. These inputs can be of any type whether text, button, checkbox, date, time, etc. Input Tags are used to create interactive controls for web-based forms in order to accept data from the user.  -->
+        <div>
+       Name:  <input type="text" name="myName">
+    </div><br>
+
+    <!-- The <span> is an in-line element and <div> is a block element. Which means, if we use two separate div tags for different inputs, then all the inputs will come on different lines. -->
+    <div>
+       Role:  <input type="text" name="myRole">
+    </div><br>
+    <div>
+        <!-- The name here is used so that the backend can recognize the tag that we are using. -->
+        Email: <input type="email" name="myEmail">
+    </div><br>
+    <div>
+        <!-- We can also add date and time in the form. To add these, the general syntax is -->
+        <input type="date" value="mydate">
+    </div><br>
+    <div>
+        <!-- To add any numeric text in the HTML form, the syntax is- -->
+        <!-- it is important to know that if you want to write the power of 10th you can by writing e in numerical -->
+        Income: <input type="number" name="myNumber">
+    </div><br>
+    <div>
+        
+        <!-- While filling several online forms, you must have seen the radio buttons and checkboxes in the form. Radio buttons are such buttons that allows to select any one of the following options amongst all. For example, while selecting the gender, we can only select either male or female. Whereas the checkbox allows selecting the multiple options available. -->
+        Are you Eligible? <input type="checkbox" name="" >
+
+
+        <!-- if you want to checked it already by default you can use it as below: 
+        Are you Eligible? <input type="checkbox" name="" checked > -->
+    </div><br>
+    <div>
+        
+        
+        
+        <!-- Here, you can see that you can select either male or female but , as the value (name) of other is different than the male and Female you can select it with them  -->
+        gender: Male: <input type="radio" name="Mygender"> Female: <input type="radio" name="Mygender"> Other: <input type="radio" name="Dontknow">
+        
+    </div><br>
+<div>
+        <!-- to add the text area write textarea -->
+    write about yourself<br>
+    <textarea name="mytext" cols="30" rows="10"></textarea>
+</div><br>
+    <div>
+    
+        <!-- get the submit button in the form, the syntax is- -->
+        <input type="submit" value="Submit now">
+    </div>
+    <div>
+
+    <!-- To reset: -->
+    <input type="reset" valur="Myreset">
+    </div>
+</form>
+</body>
+</html>

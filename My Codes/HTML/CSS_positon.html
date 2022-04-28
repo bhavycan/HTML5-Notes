@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+        /* position: static(default), absolute, relative, fixed, sicky */
+
+      .box{
+        border: 3px solid black;
+        width: 50px;
+        height: 50px;
+        margin: 3px;
+      }  
+
+      #box3{
+          position: relative;           /*relative to its normal position*/
+         
+          top:59px;
+          left:61px;
+      }
+
+      #box4{
+          position: absolute;   /*relative  to its parent div*/
+          top:100px;
+          left: 100px;
+      }
+
+      #box1{
+          position: sticky;      /*when you scoll down it will fixed at top*/
+          top:50px;
+          left:150px;
+      }
+
+      /* In fixed it is relative to the browser window */
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

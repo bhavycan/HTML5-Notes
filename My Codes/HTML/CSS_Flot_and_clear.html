@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+ <style>
+     *{
+         box-sizing: border-box;
+     }
+
+
+     .container{
+        width: 1000px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;      /*set the margin */
+     }
+     .items{
+        border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+
+     }
+
+     #b1{
+        float: right;
+    width: 48%;
+    margin-top: 49px;
+    margin-right: 20px;
+}
+
+     #b2{
+        float: left;
+    width: 48%;
+    margin-left: 11px;
+     }
+
+     #b3{
+        /* float: left; */      /*will overwrite */
+        width: 98%;
+        clear: left;        /*not a single float from left */
+        /*for both */
+        clear: both;
+     }
+     p,h1{
+         /* text-align:  left;
+         text-align: right;
+         text-align: center; */
+         text-align: justify;
+     }
+ </style>
+</head>
+<body>
+    <div id="a1" class="container">
+        <h1><b>Welcome TO My Store</b></h1>
+        <div id="b1" class="items">
+        <h3>Fruits</h3>
+        <p id="f1" class="Fruits" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt quas architecto illo numquam perferendis earum veritatis id. Nulla architecto doloremque voluptas doloribus? Veniam animi nisi veritatis fugit, tenetur natus labore saepe libero maxime rerum, nulla voluptate neque sapiente quidem?</p>
+        </div>
+        <br>
+        <br>
+        <div id="b2" class="items"> 
+        <h3>Stationary</h3>
+        <p id="f2" class="Stationary" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero dicta possimus ipsum aspernatur quos tempora explicabo similique quibusdam, ullam porro mollitia ratione. Quo recusandae, incidunt deleniti cupiditate atque nesciunt nam distinctio deserunt facilis corporis dolores nostrum inventore tempore dolore.</p>
+        </div>
+        <br>
+        <br>
+
+        <div id="b3" class="items">
+        <h3>Dress</h3>
+        <p id="f3" class="Dress" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam consequuntur optio quae dolorum consequatur velit voluptatibus eius harum odio, tempore veniam accusantium natus aliquid, a saepe dignissimos, dicta dolorem voluptas ab beatae porro officiis. Aliquam sed esse eos iste facilis?</p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

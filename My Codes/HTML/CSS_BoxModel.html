@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+    body{
+        background-color:sandybrown;
+    }
+        .container{
+            background-color: rgb(red, green, blue);
+            border: 2px solid black;
+            /* padding: 70px;   Of all side
+            padding-top: 79px;
+            padding-right: 79px;   From sepratly
+            padding-bottom: 79px;
+            padding-left: 34px;*/    
+            
+            
+            /*we can also write it ina single line*/
+            /* padding: 23px 56px 6px 78px; */
+               /*padding: top right bottom left----> clock wise*/ 
+               margin: 56px 328px;
+               padding: 23px 27px;   /*padding : x y */
+               border-radius:  23px;
+               width: 758px;
+
+/* 
+               Let us now understand a property called ‘Box sizing’. On giving width to the element and after that applying padding in the container, the width also changes. It is because in the actual width of an element, margin is already been added into it. If you want this not to happen then you can use the property of ‘box-sizing’. */
+
+               box-sizing: border-box;
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Content- The content of the box, where text and images appear.
+
+    Padding- It clears an area around the content. The padding is transparent.
+
+    Border- A border is one that covers the padding and content.
+
+    Margin- It clears an area outside the border. The margin is also transparent.
+     -->
+
+    <div class="container">
+        <h3>This is my heading</h3>
+
+        <!-- if you want to write id and stuff directly you can write like that : p#id_name -->
+
+        <p id="firts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt beatae quae, natus ipsam ipsa deleniti vero ducimus voluptate veniam corporis excepturi porro nobis magnam deserunt placeat nisi eaque! Minima quaerat deleniti corrupti dolores. Cumque, et praesentium eos doloremque vero nostrum?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt beatae quae, natus ipsam ipsa deleniti vero ducimus voluptate veniam corporis excepturi porro nobis magnam deserunt placeat nisi eaque! Minima quaerat deleniti corrupti dolores. Cumque, et praesentium eos doloremque vero nostrum?</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt beatae quae, natus ipsam ipsa deleniti vero ducimus voluptate veniam corporis excepturi porro nobis magnam deserunt placeat nisi eaque! Minima quaerat deleniti corrupti dolores. Cumque, et praesentium eos doloremque vero nostrum?</p>
+    </div>
+</body>
+</html>
