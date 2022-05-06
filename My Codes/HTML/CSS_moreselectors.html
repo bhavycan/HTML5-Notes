@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selector</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+            background-color: aqua;
+        }
+
+
+        /* div p{}  ----> it meas that all p in div */
+
+        /* div li p{
+            color: yellow;
+        } */
+
+        div > p{
+            /* it means that the select only p whoes parent is direct div*/
+            color: green;
+        }
+
+        div + p{
+            /*it means that select the options whoes last element is div*/
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another Paragraph inside li</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
