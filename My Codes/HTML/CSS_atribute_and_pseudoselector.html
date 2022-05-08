@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and Pseudo Selector</title>
+    <style>
+        .container{
+            display: block;
+            width : 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        /* input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        } */
+
+        a[target]{
+            font-size: large;
+            color: brown;
+        }
+
+        a[target='_self']{
+            font-size: large;
+            color: yellow;
+        }
+
+
+        /* This will apply css for 3rd child */
+        li:nth-child(3){
+            color: blue;
+        }
+
+        /* Each 2nd element */
+        li:nth-child(2n+0){
+            color: pink;
+        }
+
+        li:nth-child(odd){
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+        </ul>
+    </div>
+</body>
+</html>
