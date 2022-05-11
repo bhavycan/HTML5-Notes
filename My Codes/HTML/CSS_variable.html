@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root{
+            --box-color:yellow;
+            /*in a root you can make the variable global*/
+            --maxw: 200px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box{
+            /* --box-color:yellow; */
+            width: var(--maxw);
+            height: 200px;
+            background-color: var(--box-color);
+            margin: 2px 9px;
+            border: 2px solid red;
+            box-shadow: 2px 3px 5px var(--box-color);
+
+            /*The scope of the box- color should be inside this brackets you can use it outside*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>
