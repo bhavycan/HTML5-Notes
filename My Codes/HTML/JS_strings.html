@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, velit fugiat sit explicabo facilis a est ut accusantium aliquid, amet, voluptatibus magni rerum porro assumenda similique excepturi ipsa. Consectetur deserunt unde ab autem obcaecati?</p>
+    </div>
+    <script>
+        // var string = "Bhavy";
+        var string = 'Bhavy';
+        var name = "Bhavy";
+        var channel = "The memer"
+        var message = "Bhavy is boy";
+        console.log(name + message);
+        var temp = `${name} is a nice boy and he has the youtube channel names ${channel}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`The length is ${len}`);
+
+        //escape sequence character
+        console.log("Hello! \n Bhavy is \\n here");
+
+
+        document.getElementById('content').innerHTML = `${message} and you should know!`;
+    </script>
+</body>
+</html>
