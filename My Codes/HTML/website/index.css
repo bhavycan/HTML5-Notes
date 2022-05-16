@@ -1,0 +1,150 @@
+/*CSS reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Css variablels*/
+
+:root{
+    --navbar-heights: 59px;
+
+}
+
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+/*logo and img*/
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+}
+
+/*navigation bar list styling*/
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;         /*by default a is inline*/
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+/*Home*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 512px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    background: url(img1.jpg) no-repeat center center;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home h1{
+    font-family: 'Macondo', cursive;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px; 
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    background-color: red;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
+
+
+/*services-center*/
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+    <script>
+        var str="This is the string";
+        console.log(str);
+
+        var position = str.indexOf('is');
+        //Will tell the first occurance of substring
+        console.log(position);
+        //index start from zero
+
+        position = str.lastIndexOf('is');
+        console.log(position);
+        //will tell the last occurance
+
+        var  substr = str.slice(1,7);
+        console.log(substr);
+        //will print the index of 1 to 7
+        var substr = str.substring(1,7);
+        console.log(substr);
+        //same as slice but can take negative value
+
+        var replace = str.replace('string', 'Bhavy');
+        console.log(str);
+        console.log(replace);
+        //replace the string but not the orignal
+
+        var newstring = str.concat('new string');
+        console.log(newstring);
+        var newstring1 = str + 'New string';
+        console.log(newstring1);
+        //concate the string
+
+        var sentence = "      this contain        whitespace";
+        console.log(sentence);
+        console.log(sentence.trim());
+        //trim the sentence
+
+        var character = str.charAt(2);
+        console.log(character);
+        //give the character at index 2
+
+        console.log(str.toUpperCase());  
+        //for the uppercase
+        //same can be done with lowercase
+              
+
+    </script>
+</body>
+</html>
