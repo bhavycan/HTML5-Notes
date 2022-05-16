@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope If-else and switch</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1 = "This is the string";
+        var string1 = "This is the string2";
+        console.log(string1);
+        //name is same still no error in var 
+
+
+        let a ="u";
+        //if i again declare the variable then it will throw a error
+        console.log(a);
+        {
+            let a="u2";
+            console.log(a);
+        }
+
+        const b = "This is the thing you cannot change"
+        // b = "I am trying to change const";
+        console.log(b);
+        //throw error
+
+let age = 48;
+if(age<18){
+    console.log("Go For study kid")
+}
+else if(age>18 && age<30){
+    console.log("Are you permit to drink alcohol by your family");
+}
+else if(age>30){
+    console.log("Cheers Bhaisaab!!!");
+}
+else{
+    console.log("Bro please tell me");
+}
+
+
+const run = 100;
+switch(run){
+    case 0:
+        console.log("My name is not Virat");
+        break;
+    case 100:
+        console.log("My name is Virat");
+        break;
+    default:
+        console.log("Go to Hell");
+        break;
+
+}
+    </script>
+</body>
+</html>
