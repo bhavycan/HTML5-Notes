@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        console.log("Hi!!!");
+        let name = "Bhavy";
+        let thank = "Thnaks a lot!!";
+        function greet(name,thank = "Thanks a LOttttttttttttttttt"){
+            //This is the default value for thank
+           console.log(`Another year around the sun is always something to celebrate! Sending birthday greetings is a wonderful way to honor the birthday of a partner, family member, friend, ${name}, or any other ${thank} one. When you’re deciding which birthday`);
+        }
+
+        greet(name, thank);
+        console.clear();
+        greet("Lol", "BRUHHHHH");
+
+        //You can use the function as variable
+        let val = greet("Chhagan", "Magan");
+        console.log(val);
+
+
+        console.clear();
+
+        const myobj={
+            name3: "SKILLF",
+            game: function(){
+                return "GTA";
+            }
+        }
+
+        console.log(myobj.game());
+
+        let arr = ["fruite", "Veg", "lOl" ];
+
+        arr.forEach(function(element,index,array){
+        console.log(element,index,array)});
+
+        console.clear();
+
+
+        //scope
+        var i = 89;
+        function abc(name){
+            var i =9;
+            console.log(i);
+            console.log(`This is the area of  ${name}`);
+        }
+        console.log(abc("Bhavy"));
+        console.log(i);
+
+    
+    </script>
+</body>
+</html>
