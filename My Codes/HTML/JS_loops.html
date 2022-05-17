@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is LOOPs!!!!
+    </div>
+    <script>
+        //Loops: For 
+        for (let i = 0; i < 100; i++) {
+            console.log(i);   
+        }
+
+        console.clear();
+        //Loops: While
+        let j = 0;
+        while(j<50){
+            console.log(j);
+            j += 1;
+        }
+
+        console.clear();
+        //Loops: Do While
+        let k = 0;
+        do{
+            console.log(k+1);
+            if(k == 5){
+                break;      //just finish it
+            }
+            // if(k = 2){
+            //     continue; jump it 
+            // }
+            k++;
+        }while(k<10);
+        console.log("Finsh!");
+
+
+        console.clear();
+        //For Each
+
+        let arr = [2,5,3,6,3,2];
+        arr.forEach(function(element){
+            console.log(element + 2);
+
+        });
+
+        let obj = {
+            //key : value
+            name: "Bhavy",
+            age : 99,
+            message: "Code kar"
+        }
+
+        for(let key in obj){
+            console.log(`The ${key} of object is ${obj[key]}`);
+        }
+    </script>
+</body>
+</html>
