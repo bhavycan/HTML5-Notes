@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Type Conversation</title>
+</head>
+<body>
+    <div class="container">
+        Hello!This is the conatainer
+    </div>
+    <script>
+        console.log("Hello World!!");
+        let myVar;
+        console.log(myVar,( typeof myVar));
+        myVar = String(34);
+        //watch it carefully the 'S' in the string is capital
+
+        console.log(myVar, (typeof myVar));
+
+
+        let booleanvar = true;
+        console.log(booleanvar, (typeof booleanvar));
+
+        booleanvar = String(true);
+        console.log(booleanvar, (typeof booleanvar));
+
+        let date = String(new Date());
+        console.log(date, (typeof date));
+
+        let arr = String([1,2,3,4,5]);
+        console.log(arr, (typeof arr));
+
+        console.clear();
+
+
+        //using the tostring function
+        let i = 8;
+        console.log(i.toString());
+
+
+        //string to number
+        let str = "34560";
+        console.log(str, (typeof str));
+        str = Number("34560");
+        console.log(str, (typeof str));
+
+
+        //parseInt and parsFloat
+        let number = '34';
+        console.log(number, (typeof number));
+        number = parseInt('34');
+        console.log(number, (typeof number));
+        number = parseFloat('356.235');
+        console.log(number, (typeof number));
+
+        //tofixed function
+        console.log(number.toFixed(2), (typeof number));
+
+        //type coercion
+        let mystr = "689";
+        let mynum = 34;
+        console.log(mystr + mynum);
+        //will add the like string append
+
+        mystr = Number('689');
+        console.log(mystr + mynum);
+        //have to do same data type
+
+    </script>
+</body>
+</html>
